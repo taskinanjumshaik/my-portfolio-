@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Taskin Anjum</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('b1.JPG');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .top-corner {
+            position: relative;
+            background-color: pink;
+            text-align: center;
+            height: 150px;
+        }
+
+        .profile-photo {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        .small-text {
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .large-text {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            background-color: #ff66b2; 
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #ff3385; 
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff99cc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-buttons">
+        <a href="home.html"><button>Home</button></a>
+        <a href="aboutme.html"><button>About Me</button></a>
+        <a href="skills.html"><button>My Skills</button></a>
+        <a href="photos.html"><button>Art Gallery</button></a>
+        <a href="contactinformation.html"><button>Contact Me</button></a>
+    </div>
+    
+
+    <center><h2><i>About Me</i></h2></center>
+    <table>
+        <tr>
+            <td>
+                <p id="about-text">
+                    I am <strong> Shaik Taskin Anjum</strong> from CSE-N section studying in SRM-University.
+                    I am a motivated and enthusiastic student who believes in continuous learning and self-improvement. 
+                    I am passionate about achieving my goals and always strive to give my best in everything I pursue.
+                    I enjoy exploring new subjects and gaining knowledge in diverse fields to enhance my skills and understanding.
+                    I approach challenges with determination and a solution-oriented mindset. 
+                    I love finding innovative ways to solve problems and express my ideas.
+                </p>
+                <button onclick="changeText()">Click to know more</button>
+                
+            </td>
+        </tr>
+    </table>
+
+    <center><h2><i>Hobbies</i></h2></center>
+    <table>
+        <tr>
+            <td>
+                <ul>
+                    <li>Listening to music.</li>
+                    <li>Dancing</li>
+                    <li>Cooking.</li>
+                    <li>Travelling to new places.</li>
+                    <br>
+                    Music is a great way to relax and uplift my mood. I enjoy exploring different genres and discovering new artists.Dancing is my way of expressing joy and creativity. It helps me stay active and energized.I love experimenting with new recipes and trying different cuisines. cooking allows me to be creative and share delicious meals with loved ones. And Exploring new destinations,experiencing different cultures, and meeting new people excite me. It creates my unforgetable memories.  
+            </br>
+
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <center><h2><i>Education</i></h2></center>
+    <table> 
+        <tr>
+            <td>
+                <ul>
+                    <li><b>Grade 10:</b> Chaitanya, Guntur (2021)</li>
+                    <li><b>Grade 12:</b> Chaitanya, Guntur (2023)</li>
+                    <li><b>B.Tech:</b> SRM University, AP, Neerukonda (2027)</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function changeText() {
+            document.getElementById("about-text").innerHTML = "I am passionate about achieving my goals and always strive to give my best in everything I pursue. I enjoy exploring new subjects and gaining knowledge in diverse fields to enhance my skills and understanding. I approach challenges with determination and a solution-oriented mindset. I love finding innovative ways to solve problems and express my ideas.";
+        }
+    </script>
+</body>
+</html>

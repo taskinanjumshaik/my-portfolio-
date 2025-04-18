@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Taskin Anjum</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('b1.JPG');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .top-corner {
+            position: relative;
+            background-color: pink;
+            text-align: center;
+            height: 150px;
+        }
+
+        .profile-photo {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        .small-text {
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .large-text {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            background-color: #ff66b2; 
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #ff3385; 
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff99cc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-buttons">
+        <a href="home.html"><button>Home</button></a>
+        <a href="aboutme.html"><button>About Me</button></a>
+        <a href="skills.html"><button>My Skills</button></a>
+        <a href="photos.html"><button>Art Gallery</button></a>
+        <a href="contactinformation.html"><button>Contact Me</button></a>
+    </div>
+    <div class="container text-center mt-5">
+        <h1 id="greeting">Welcome to shaik.Taskin Anjum's Portfolio</h1>
+        <p><b><h3>  2nd year, 4th semester, SRM AP University</h3></b></p>
+        <p><h3>
+            Hello! My name is <strong>shaik.Taskin Anjum</strong> from CSE-N section, and I am a passionate student with a keen interest in computer science. 
+            I believe that learning is a lifelong journey, and I am always eager to expand my knowledge and skills. 
+            Whether it's diving into textbooks, engaging in hands-on projects, or collaborating with peers, I strive to make the most out of every educational opportunity.
+        </p>
+
+        <p>
+            Academically, I am currently pursuing CSE at SRM University, AP. My favorite subjects include Maths, English, Coding, and Web Technologies, 
+            as they challenge me to think critically and creatively. I enjoy problem-solving and researching new concepts, always looking for ways to apply what I learn in real-life situations. 
+            My goal is to excel in my studies and build a strong foundation for my future career.
+        </p>
+
+        <p>
+            Beyond academics, I have a variety of hobbies that keep me engaged and balanced. I love coding, as it allows me to express myself and unwind. 
+            I also enjoy participating in extracurricular activities such as clubs, competitions, and volunteer work, which help me develop important skills like teamwork, leadership, and communication.
+        </p>
+
+        <p>
+            I am always looking for opportunities to grow both personally and professionally. 
+            I believe in setting goals and working diligently toward them, whether it’s improving my academic performance, learning a new skill, or taking on exciting challenges. 
+            My curiosity and determination drive me to push beyond my comfort zone and strive for excellence in everything I do.
+        </p></h3>
+
+    </div>
+
+    <script>
+        function updateGreeting() {
+            let greetingElement = document.getElementById("greeting");
+            let hour = new Date().getHours();
+            let greetingText;
+            
+            if (hour < 12) {
+                greetingText = "Good Morning, Welcome to Taskin Anjum's Portfolio";
+            } else if (hour < 18 ) {
+                greetingText = "Good Afternoon, Welcome to Taskin Anjum's Portfolio";
+            } else  {  
+                greetingText = "Good Evening, Welcome to Taskin Anjum's Portfolio";
+            } 
+            
+            greetingElement.textContent = greetingText;
+        }
+        
+        window.onload = updateGreeting;
+    </script>
+    <style> 
+    .nav-buttons a:hover {
+        background-color: #ff3385; 
+    }
+
+    img {
+        width: 350px;
+        height: 450px;
+        transition: all 0.3s ease;
+    }
+
+    img:hover,
+    img:active {
+        border: 5px solid #ff0095;
+        transform: scale(1.05);
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<center><img src="pic .v.jpg" alt="Description of Image" width="300">
+</center>
+</body>
+</html>
